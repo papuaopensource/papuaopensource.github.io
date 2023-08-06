@@ -1,0 +1,73 @@
+<footer class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-8 mx-auto">
+
+        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="font-inter text-gray-500 dark:text-white">
+                {{ if (isset .Site.Params "copyright") }}
+                {{ .Site.Params.copyright }}
+                {{ else }}
+                {{ dateFormat "2006" now }} © {{ .Site.Title }}
+                {{ end }}
+            </p>
+
+            <div class="flex flex-row">
+                <a href="https://open.spotify.com/show/5sUWjjDuUqDXAhaMfEs2HC" target="_blank"
+                    class="text-gray-500 transition-colors duration-300 dark:text-white" aria-label="Spotify">
+                    <i class="bi bi-spotify text-xl hover:text-green-500"></i>
+                </a>
+
+                <a href="https://github.com/antheiz" target="_blank"
+                    class="mx-5 text-gray-500 transition-colors duration-300 dark:text-white" aria-label="Github">
+                    <i class="bi bi-github text-xl hover:text-gray-800 dark:hover:text-white"></i>
+                </a>
+
+                <a href="https://youtube.com/antroytech" target="_blank"
+                    class="text-gray-500 transition-colors duration-300 dark:text-white" aria-label="YouTube">
+                    <i class="bi bi-youtube text-xl hover:text-red-500"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Library Alpine.JS -->
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+
+{{ if .Site.Params.darkModeToggle }}
+<script>
+    // On page load or when changing themes
+    const darkmode = document.querySelector('.toggle-dark-mode');
+    if (localStorage.getItem('darkmode') === 'dark' || (!('darkmode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+
+    darkmode.addEventListener('click', function () {
+
+        // if set via local storage previously
+        if (localStorage.getItem('darkmode')) {
+            if (localStorage.getItem('darkmode') === 'light') {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('darkmode', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('darkmode', 'light');
+            }
+
+            // if NOT set via local storage previously
+        } else {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('darkmode', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('darkmode', 'dark');
+            }
+        }
+
+    });
+</script>
+{{ end }}

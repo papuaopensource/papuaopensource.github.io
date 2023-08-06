@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="px-4 py-10 mx-auto dark:bg-gray-800 flex items-center">
+    <article class="max-w-screen-md space-y-4 sm:mx-auto font-inter prose lg:prose-lg text-gray-900 dark:text-gray-50">
+        <h2 class="mb-6 font-bold tracking-tight sm:leading-none dark:text-gray-50">
+            {{ .Title }}
+        </h2>
+        {{ .Content }}
+    </article>
+</section>
+{{ end }} {{/* if in .Params.type "support" */}}

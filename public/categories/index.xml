@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Antroy Tech</title>
+    <link>http://antroytech.com/categories/</link>
+    <description>Recent content in Categories on Antroy Tech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Jan 2023 17:29:51 +0700</lastBuildDate><atom:link href="http://antroytech.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>podcast</title>
+      <link>http://antroytech.com/categories/podcast/</link>
+      <pubDate>Tue, 24 Jan 2023 17:29:51 +0700</pubDate>
+      
+      <guid>http://antroytech.com/categories/podcast/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

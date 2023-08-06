@@ -1,0 +1,27 @@
+theme = "karokari"
+languageCode = "en-us"
+baseURL = "https://antroytech.vercel.app/"
+title = "Antroy Tech"
+
+[params]
+
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Custom copyright - optional
+  copyright = "Copyright © 2022 - Antroy Tech · All Rights Reserved."
+  favicon = "/img/favicon.ico"
+  
+[params.homepage]
+  description = "Selamat datang di Website Antroy Tech. Antroy Tech adalah tempat untuk berbagi dan belajar Teknologi"
+  photo = "/img/logo.png"
+  
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  
+[[menu.main]]
+  name = "Support"
+  url = "/support"
+  
+  

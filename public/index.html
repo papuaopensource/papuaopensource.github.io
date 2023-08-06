@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="dark"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.ico">
+
+  <title>
+    Antroy Tech - Antroy Tech
+  </title>
+  <meta name="description"
+    content="" /><meta name="generator" content="Hugo 0.92.2" /><link rel="stylesheet" href="http://antroytech.com/css/styles.min.31a3b62ca2c959ccdf040920625ea37f1e359cb49af8bd4ee3896e03d188ea6c.css" integrity="sha256-MaO2LKLJWczfBAkgYl6jfx41nLSa+L1O44luA9GI6mw=" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head><body><nav x-data="{ isOpen: false }" class="border-b font-lexend font-medium dark:border-gray-700 dark:bg-gray-900">
+    <div class="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
+        <div class="flex items-center justify-between">
+            <div>
+                <a class="text-2xl font-inter font-bold text-gray-900 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
+                    href="http://antroytech.com/">AT</a>
+            </div>
+
+
+            
+            <div class="flex lg:hidden">
+                <button x-cloak @click="isOpen = !isOpen" type="button"
+                    class="text-gray-500 dark:text-white hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                    aria-label="toggle menu">
+                    <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                    </svg>
+
+                    <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+            class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+            <div class="flex flex-col space-y-8 lg:flex-row lg:items-center lg:space-y-0">
+                
+                <a class="block font-inter font-medium text-gray-900 lg:ml-10 dark:text-white hover:text-blue-600 dark:hover:text-gray-400 hover:underline"
+                    href="/about">About</a>
+                
+                <a class="block font-inter font-medium text-gray-900 lg:ml-10 dark:text-white hover:text-blue-600 dark:hover:text-gray-400 hover:underline"
+                    href="/support">Support</a>
+                
+
+                
+                <a class="block font-inter font-medium text-gray-900 lg:mx-10 dark:text-white hover:text-blue-600 dark:hover:text-gray-400 hover:underline"
+                    href="http://antroytech.com/blog/">Blogs</a>
+                
+
+                
+                <span class="toggle-dark-mode inline-block cursor-pointer dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="12" y1="5" x2="12" y2="5.01" />
+                        <line x1="17" y1="7" x2="17" y2="7.01" />
+                        <line x1="19" y1="12" x2="19" y2="12.01" />
+                        <line x1="17" y1="17" x2="17" y2="17.01" />
+                        <line x1="12" y1="19" x2="12" y2="19.01" />
+                        <line x1="7" y1="17" x2="7" y2="17.01" />
+                        <line x1="5" y1="12" x2="5" y2="12.01" />
+                        <line x1="7" y1="7" x2="7" y2="7.01" />
+                    </svg>
+                </span>
+                
+
+            </div>
+        </div>
+    </div>
+</nav><header
+    class="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:max-w-full lg:items-center lg:bg-gray-100 dark:bg-gray-800">
+    <div class="flex flex-col items-center lg:w-1/2">
+        <div class="max-w-lg">
+            <h1 class="text-3xl font-lexend font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+                <span class="text-blue-500">ANTROY</span> TECH
+            </h1>
+            <p class="mt-4 text-gray-600 font-inter text-lg dark:text-gray-300">
+                Selamat datang di Website Antroy Tech. Antroy Tech adalah tempat untuk berbagi dan belajar Teknologi
+            </p>
+
+            <form class="mt-6 w-2/3">
+                <div class="relative max-w-lg">
+                    <label class="sr-only" for="email"> Email </label>
+
+                    <input
+                        class="w-full rounded-md border-gray-200 bg-white focus:outline outline-blue-500 p-4 pr-32 text-sm font-inter font-base"
+                        id="email" type="email" placeholder="name@example.com" />
+
+                    <button
+                        class="absolute top-1/2 right-1 -translate-y-1/2 rounded-md bg-blue-600 px-5 py-3 text-sm font-lexend font-base text-white transition hover:bg-blue-700"
+                        type="button">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="md:flex hidden items-center justify-center w-full h-96 lg:w-1/2">
+        <img class="object-cover h-full max-w-2xl rounded-full" src="/img/logo.png"
+            alt="apple watch photo" />
+    </div>
+</header><section class="bg-white dark:bg-gray-900">
+
+  <div class="container px-6 py-10 mx-auto">
+
+    <hr class="md:hidden block my-6 border-gray-200 dark:border-gray-700" />
+
+    <div class="text-center">
+      <h1 class="text-3xl font-lexend font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+        Our
+        <span class="text-blue-500">Content</span>
+      </h1>
+
+      <p class="max-w-lg font-inter mx-auto mt-4 text-gray-500">
+        Salami mustard spice tea fridge authentic Chinese food dish salt tasty liquor. Sweet savory
+        foodtruck
+        pie.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
+      <a href="http://antroytech.com/blog/mengembangkan-diri-bersama-komunitas/"
+    class="border border-gray-200 shadow-sm rounded-xl group hover:shadow-lg transition px-4 py-4 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+    <div class="relative">
+        <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/img/podcast/eps1.png" alt="">
+
+        <div class="absolute bottom-0 flex group-hover:rounded-tr-md p-3 bg-white dark:bg-gray-800 ">
+            <div>
+                <p class="text-sm font-inter text-gray-500 dark:text-gray-400">Jan 24, 2023
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="mt-6 text-xl font-lexend font-semibold text-gray-800 dark:text-white">
+        Mengembangkan Diri Bersama Komunitas
+    </h1>
+
+    <hr class="w-32 my-3 text-blue-500">
+
+    <p class="text-sm pb-6 font-inter text-gray-500 dark:text-gray-400">
+        Bergabung bersama komunitas yang tepat, Akan sangat membantu kita mengembangkan diri kita sendiri menjadi lebih baik.
+    </p>
+</a>
+    </div>
+
+    
+  </div>
+</section>
+<footer class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-8 mx-auto">
+
+        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="font-inter text-gray-500 dark:text-white">
+                
+                Copyright © 2022 - Antroy Tech · All Rights Reserved.
+                
+            </p>
+
+            <div class="flex flex-row">
+                <a href="https://open.spotify.com/show/5sUWjjDuUqDXAhaMfEs2HC" target="_blank"
+                    class="text-gray-500 transition-colors duration-300 dark:text-white" aria-label="Spotify">
+                    <i class="bi bi-spotify text-xl hover:text-green-500"></i>
+                </a>
+
+                <a href="https://github.com/antheiz" target="_blank"
+                    class="mx-5 text-gray-500 transition-colors duration-300 dark:text-white" aria-label="Github">
+                    <i class="bi bi-github text-xl hover:text-gray-800 dark:hover:text-white"></i>
+                </a>
+
+                <a href="https://youtube.com/antroytech" target="_blank"
+                    class="text-gray-500 transition-colors duration-300 dark:text-white" aria-label="YouTube">
+                    <i class="bi bi-youtube text-xl hover:text-red-500"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+
+
+<script>
+    
+    const darkmode = document.querySelector('.toggle-dark-mode');
+    if (localStorage.getItem('darkmode') === 'dark' || (!('darkmode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+
+    darkmode.addEventListener('click', function () {
+
+        
+        if (localStorage.getItem('darkmode')) {
+            if (localStorage.getItem('darkmode') === 'light') {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('darkmode', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('darkmode', 'light');
+            }
+
+            
+        } else {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('darkmode', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('darkmode', 'dark');
+            }
+        }
+
+    });
+</script>
+</body>
+
+</html>

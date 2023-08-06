@@ -1,0 +1,23 @@
+<a href="{{ .Permalink }}"
+    class="border border-gray-200 shadow-sm rounded-xl group hover:shadow-lg transition px-4 py-4 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+    <div class="relative">
+        <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{ .Params.thumbnail }}" alt="">
+
+        <div class="absolute bottom-0 flex group-hover:rounded-tr-md p-3 bg-white dark:bg-gray-800 ">
+            <div>
+                <p class="text-sm font-inter text-gray-500 dark:text-gray-400">{{ .Params.date.Format "Jan 2, 2006" }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="mt-6 text-xl font-lexend font-semibold text-gray-800 dark:text-white">
+        {{ .Params.title }}
+    </h1>
+
+    <hr class="w-32 my-3 text-blue-500">
+
+    <p class="text-sm pb-6 font-inter text-gray-500 dark:text-gray-400">
+        {{ .Params.description }}
+    </p>
+</a>

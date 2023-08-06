@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antroy Tech</title>
+    <link>http://antroytech.com/</link>
+    <description>Recent content on Antroy Tech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Jan 2023 17:29:51 +0700</lastBuildDate><atom:link href="http://antroytech.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mengembangkan Diri Bersama Komunitas</title>
+      <link>http://antroytech.com/blog/mengembangkan-diri-bersama-komunitas/</link>
+      <pubDate>Tue, 24 Jan 2023 17:29:51 +0700</pubDate>
+      
+      <guid>http://antroytech.com/blog/mengembangkan-diri-bersama-komunitas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Support</title>
+      <link>http://antroytech.com/support/</link>
+      <pubDate>Wed, 11 Jan 2023 18:47:31 +0700</pubDate>
+      
+      <guid>http://antroytech.com/support/</guid>
+      <description>You can support Antroy Tech on one of these following channels:
+ Direct Support Saweria Trakteer  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://antroytech.com/about/</link>
+      <pubDate>Wed, 11 Jan 2023 18:47:27 +0700</pubDate>
+      
+      <guid>http://antroytech.com/about/</guid>
+      <description>Antroy Tech is a place to learn and share knowledge about technology. Through our YouTube channel, podcasts and Instagram, we share the latest related information about Software Engineering, Product Development, Tech Community and many other things.
+Theis Andatu is the founder of Antroy Tech, Antroy Tech was founded in April 2017 with the mission of sharing knowledge that is learned to be useful for anyone who wants to learn about Technology.</description>
+    </item>
+    
+  </channel>
+</rss>

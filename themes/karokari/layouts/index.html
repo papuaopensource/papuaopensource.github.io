@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<section class="bg-white dark:bg-gray-900">
+
+  <div class="container px-6 py-10 mx-auto">
+
+    <hr class="md:hidden block my-6 border-gray-200 dark:border-gray-700" />
+
+    <div class="text-center">
+      <h1 class="text-3xl font-lexend font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+        Our
+        <span class="text-blue-500">Content</span>
+      </h1>
+
+      <p class="max-w-lg font-inter mx-auto mt-4 text-gray-500">
+        Salami mustard spice tea fridge authentic Chinese food dish salt tasty liquor. Sweet savory
+        foodtruck
+        pie.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
+      {{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type" "blog") }}
+      {{- partial "post-grid.html" . -}}
+      {{ end }}
+    </div>
+
+    {{ if gt (len (where .Site.RegularPages.ByDate.Reverse "Type" "blog")) 6 }}
+    <div class="text-center pt-16">
+      <a class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
+        href="/blog">
+        More content
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
