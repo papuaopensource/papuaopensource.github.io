@@ -1,6 +1,6 @@
 theme = "karokari"
 languageCode = "en-us"
-baseURL = "https://antroytech.vercel.app/"
+baseURL = "/"
 title = "Antroy Tech"
 
 [params]
