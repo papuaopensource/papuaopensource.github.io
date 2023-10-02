@@ -13,8 +13,10 @@ title = "Antroy Tech"
   favicon = "/img/favicon.ico"
   
 [params.homepage]
-  description = "Selamat datang di Website Antroy Tech. Antroy Tech adalah tempat untuk berbagi dan belajar Teknologi"
-  photo = "/img/logo.png"
+  description = "Antroy Tech adalah Tempat kolaborasi teknologi dengan semangat open source. Belajar, berbagi, dan berinovasi bersama di era digital yang inklusif!"
+  logo = "/img/logo.png"
+  light_papua_island = "/svg/papuaisland-light.svg"
+  dark_papua_island = "/svg/papuaisland-dark.svg"
   
 [[menu.main]]
   name = "About"

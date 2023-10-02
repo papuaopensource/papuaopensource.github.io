@@ -2,10 +2,12 @@
 <html class="dark">
 {{- partial "head.html" . -}}
 
-<body>
-    {{- partial "nav.html" . -}}
+<body class="font-inter">
+    {{- partial "header.html" . -}}
 
-    {{- block "main" . }}{{- end }}
+    <section class="bg-white dark:bg-gray-900">
+        {{- block "main" . }}{{- end }}
+    </section>
 
     {{- partial "footer.html" . -}}
 </body>
