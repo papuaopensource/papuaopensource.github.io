@@ -1,0 +1,163 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "@/assets/images/contribution-open-source-ilustration.svg";
+
+import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/Link.astro";
+import TabsWrapper from "@/components/TabsWrapper";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+
+import { Code, RefreshCw, Share2 } from "lucide-react";
+---
+
+<Layout
+  title="Cara Berkontribusi"
+  description="Tidak perlu menjadi seorang ahli untuk mulai berkontribusi. Kami menyambut kontributor dari semua tingkat keahlian, dari pemula hingga profesional."
+>
+  <div class="min-h-screen bg-white">
+    {/* Hero Section */}
+    <section class="bg-slate-50 px-4 py-12 md:px-8 md:py-24">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="mx-auto max-w-3xl space-y-4 text-center">
+          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">
+            Cara Berkontribusi
+          </h1>
+          <p class="text-gray-500 md:text-xl/relaxed">
+            Bergabunglah dalam pengembangan teknologi open source untuk Tanah
+            Papua
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Principles Section */}
+    <section class="px-4 py-12 md:px-8 md:py-24">
+      <div class="max-w-screen-xl mx-auto space-y-12">
+        <div class="space-y-4 text-center">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+            Prinsip Kami
+          </h2>
+          <p class="mx-auto max-w-[700px] text-gray-500 md:text-lg/relaxed">
+            Tiga prinsip utama yang menjadi landasan komunitas Papua Open Source
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Card className="bg-white shadow-none">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Share2 className="h-6 w-6" />
+              </div>
+              <CardTitle>Share</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Mendistribusikan kode sumber ke publik, membuka akses
+                pengetahuan untuk semua.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-none">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Code className="h-6 w-6" />
+              </div>
+              <CardTitle>Improve</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Modifikasi atau perbaikan kode untuk kualitas lebih baik, terus
+                mengembangkan solusi.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-none">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <RefreshCw className="h-6 w-6" />
+              </div>
+              <CardTitle>Repeat</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Teruskan siklus berbagi dan perbaikan untuk perkembangan
+                berkelanjutan.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    {/* How to Contribute Section */}
+    <section class="bg-slate-50 px-4 py-12 md:px-8 md:py-24">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="mx-auto max-w-3xl space-y-4 text-center">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+            Cara Berkontribusi
+          </h2>
+          <p class="text-gray-500 md:text-lg/relaxed">
+            Ada banyak cara untuk berkontribusi pada proyek-proyek Papua Open
+            Source
+          </p>
+        </div>
+
+        <div class="mt-12">
+          <TabsWrapper client:load />
+        </div>
+      </div>
+    </section>
+
+    {/* Getting Started Section */}
+    <section class="px-4 py-12 md:px-8 md:py-24">
+      <div class="max-w-screen-xl mx-auto">
+        <div
+          class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center"
+        >
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold tracking-tighter">
+              Mulai Berkontribusi
+            </h2>
+            <p class="text-gray-500 md:text-lg/relaxed">
+              Tidak perlu menjadi seorang ahli untuk mulai berkontribusi. Kami
+              menyambut kontributor dari semua tingkat keahlian, dari pemula
+              hingga profesional.
+            </p>
+            <p class="text-gray-500 md:text-lg/relaxed">
+              Kami telah menandai beberapa issue di GitHub dengan label "good
+              first issue" yang cocok untuk kontributor pertama kali. Anda juga
+              dapat bergabung dengan diskusi di forum kami untuk mendapatkan
+              bantuan dan bimbingan.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <Button>
+                <Link href="https://github.com/papua-opensource"
+                  >Lihat Issue di GitHub</Link
+                >
+              </Button>
+              <Button variant="outline">
+                <Link href="/kontak">Hubungi Kami</Link>
+              </Button>
+            </div>
+          </div>
+          <div>
+            <Image
+              src={HeroImage}
+              alt="Contribution - Open Source Illustration"
+              width={600}
+              height={400}
+              class="rounded-lg object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
