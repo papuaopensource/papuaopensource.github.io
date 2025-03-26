@@ -1,9 +1,9 @@
 name: Deploy Astro site to GitHub Pages
 
 on:
-  # Jalankan workflow setiap kali ada push ke branch master
+  # Jalankan workflow setiap kali ada push ke branch main
   push:
-    branches: ["master"]
+    branches: ["main"]
   # Memungkinkan Anda untuk menjalankan workflow secara manual dari tab Actions
   workflow_dispatch:
 
