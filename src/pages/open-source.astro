@@ -1,0 +1,334 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "@/assets/images/home-open-source-ilustration.svg";
+
+import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/Link.astro";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+
+import { ArrowRight, Code, Globe, Lightbulb, Users, Zap } from "lucide-react";
+---
+
+<Layout
+  title="Open Source"
+  description="Kami percaya pada kekuatan kolaborasi berbasis open source dan kami berkomitmen memajukan ekosistem teknologi di Tanah Papua."
+>
+  <div class="min-h-screen bg-white">
+    {/* Hero Section */}
+    <section class="bg-slate-50 py-12 md:py-24">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div class="mx-auto max-w-3xl space-y-4 text-center">
+          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">
+            Open Source untuk Papua
+          </h1>
+          <p class="text-gray-500 md:text-xl/relaxed">
+            Memahami konsep Open Source dan mengapa kolaborasi berbasis Open
+            Source penting untuk Tanah Papua
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* What is Open Source Section */}
+    <section class="py-12 md:py-24">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold tracking-tighter">
+              Apa itu Open Source?
+            </h2>
+            <p class="text-gray-500 md:text-lg/relaxed">
+              Open Source adalah pendekatan pengembangan perangkat lunak yang
+              menekankan pada keterbukaan kode sumber, kolaborasi, dan berbagi
+              pengetahuan. Perangkat lunak open source adalah program komputer
+              yang kode sumbernya tersedia untuk umum dan dapat diakses,
+              dimodifikasi, dan didistribusikan oleh siapa saja.
+            </p>
+            <p class="text-gray-500 md:text-lg/relaxed">
+              Prinsip utama open source adalah transparansi, kolaborasi, dan
+              kebebasan untuk menggunakan, mempelajari, memodifikasi, dan
+              mendistribusikan perangkat lunak. Pendekatan ini memungkinkan
+              pengembang dari seluruh dunia untuk bekerja sama, berbagi
+              pengetahuan, dan membangun solusi yang lebih baik.
+            </p>
+          </div>
+          <div class="hidden lg:block">
+            <Image
+              src={HeroImage}
+              alt="Hero - Open Source Ilustration"
+              width={600}
+              height={400}
+              class="rounded-lg object-cover mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Benefits of Open Source */}
+    <section class="bg-slate-50 py-12 md:py-24">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8 space-y-12">
+        <div class="space-y-4 text-center">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+            Manfaat Open Source
+          </h2>
+          <p class="mx-auto max-w-[700px] text-gray-500 md:text-lg/relaxed">
+            Open Source menawarkan berbagai keuntungan yang mendukung inovasi,
+            kolaborasi, dan pembangunan kapasitas
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="bg-white">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Code className="h-6 w-6" />
+              </div>
+              <CardTitle>Transparansi</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Kode sumber yang terbuka memungkinkan siapa saja untuk
+                memeriksa, memahami, dan mempelajari cara kerja perangkat lunak,
+                meningkatkan kepercayaan dan keamanan.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Users className="h-6 w-6" />
+              </div>
+              <CardTitle>Kolaborasi</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Memungkinkan pengembang dari berbagai latar belakang dan lokasi
+                untuk bekerja sama, berbagi pengetahuan, dan membangun solusi
+                yang lebih baik.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Zap className="h-6 w-6" />
+              </div>
+              <CardTitle>Inovasi</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Mendorong inovasi melalui berbagi ide, eksperimen, dan
+                pengembangan berkelanjutan yang melibatkan komunitas yang
+                beragam.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Globe className="h-6 w-6" />
+              </div>
+              <CardTitle>Aksesibilitas</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Mendemokratisasi akses ke teknologi dengan menghilangkan
+                hambatan finansial dan teknis, memungkinkan lebih banyak orang
+                untuk menggunakan dan berkontribusi.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Lightbulb className="h-6 w-6" />
+              </div>
+              <CardTitle>Pembelajaran</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Menyediakan sumber belajar yang berharga bagi pengembang pemula
+                dan berpengalaman untuk meningkatkan keterampilan dan
+                pengetahuan mereka.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-white">
+            <CardHeader className="pb-2">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
+              >
+                <Users className="h-6 w-6" />
+              </div>
+              <CardTitle>Keberlanjutan</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-gray-500">
+                Memastikan keberlanjutan proyek melalui dukungan komunitas,
+                bahkan ketika individu atau organisasi tertentu tidak lagi
+                terlibat.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    {/* Why Open Source for Papua */}
+    <section class="py-12 md:py-24">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div class="mx-auto max-w-3xl space-y-8">
+          <h2 class="text-3xl font-bold tracking-tighter text-center">
+            Mengapa Kolaborasi Open Source untuk Tanah Papua?
+          </h2>
+          <p class="text-gray-500 md:text-lg/relaxed">
+            Tanah Papua memiliki keunikan geografis, budaya, dan tantangan
+            pembangunan yang memerlukan solusi teknologi yang disesuaikan dengan
+            konteks lokal. Kolaborasi berbasis open source menawarkan pendekatan
+            yang ideal untuk mengembangkan solusi teknologi yang relevan dan
+            berkelanjutan untuk Papua.
+          </p>
+          <div class="space-y-6 mt-8">
+            <div class="bg-slate-50 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-3">
+                Pemberdayaan Masyarakat Lokal
+              </h3>
+              <p class="text-gray-500">
+                Open source memungkinkan masyarakat Papua untuk tidak hanya
+                menjadi pengguna teknologi, tetapi juga menjadi pengembang dan
+                kontributor aktif. Ini memberdayakan masyarakat lokal untuk
+                mengembangkan solusi yang sesuai dengan kebutuhan mereka
+                sendiri.
+              </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-3">
+                Pelestarian Budaya dan Bahasa
+              </h3>
+              <p class="text-gray-500">
+                Papua memiliki kekayaan budaya dan bahasa yang luar biasa.
+                Proyek open source dapat membantu mendokumentasikan,
+                melestarikan, dan mempromosikan warisan budaya ini melalui
+                aplikasi, kamus digital, dan platform pembelajaran bahasa.
+              </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-3">
+                Mengatasi Kesenjangan Digital
+              </h3>
+              <p class="text-gray-500">
+                Dengan mengurangi hambatan akses ke teknologi, open source dapat
+                membantu mengatasi kesenjangan digital di Papua, memastikan
+                bahwa manfaat teknologi dapat dirasakan oleh semua lapisan
+                masyarakat.
+              </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-3">Kolaborasi Tanpa Batas</h3>
+              <p class="text-gray-500">
+                Open source memungkinkan kolaborasi antara pengembang lokal di
+                Papua dengan komunitas global, membuka peluang untuk berbagi
+                pengetahuan, pengalaman, dan sumber daya yang dapat mempercepat
+                perkembangan teknologi di wilayah ini.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Impact Section */}
+    <section class="bg-slate-50 py-12 md:py-24">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div class="mx-auto max-w-3xl space-y-8">
+          <h2 class="text-3xl font-bold tracking-tighter text-center">
+            Dampak yang Diharapkan
+          </h2>
+          <p class="text-gray-500 md:text-lg/relaxed">
+            Melalui kolaborasi open source, kami berharap dapat menciptakan
+            dampak positif yang berkelanjutan bagi masyarakat Papua dalam
+            berbagai aspek:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-white p-6 rounded-lg border">
+              <h3 class="text-xl font-bold mb-3">Solusi Teknologi Lokal</h3>
+              <p class="text-gray-500">
+                Mengembangkan aplikasi dan platform yang dirancang khusus untuk
+                mengatasi tantangan unik di Papua, dengan fokus pada kebutuhan
+                dan konteks lokal yang spesifik.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border">
+              <h3 class="text-xl font-bold mb-3">Infrastruktur Digital</h3>
+              <p class="text-gray-500">
+                Membangun infrastruktur digital yang dapat berfungsi dalam
+                berbagai kondisi, mendukung akses ke layanan penting, dan
+                memperkuat fondasi untuk pengembangan ekonomi digital yang
+                inklusif.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border">
+              <h3 class="text-xl font-bold mb-3">Pelestarian Budaya Digital</h3>
+              <p class="text-gray-500">
+                Menciptakan platform dan alat digital untuk mendokumentasikan
+                dan melestarikan bahasa, seni, dan pengetahuan tradisional
+                Papua, memastikan keberlanjutannya di era digital.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border">
+              <h3 class="text-xl font-bold mb-3">Inovasi Lintas Sektor</h3>
+              <p class="text-gray-500">
+                Mendorong inovasi teknologi yang mengatasi tantangan di berbagai
+                sektor melalui pendekatan kolaboratif yang melibatkan berbagai
+                pemangku kepentingan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA Section */}
+    <section class="py-12 md:py-24">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div class="mx-auto max-w-3xl space-y-6 text-center">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+            Bergabung dalam Perjalanan Open Source
+          </h2>
+          <p class="text-gray-500 md:text-lg/relaxed">
+            Jadilah bagian dari gerakan open source untuk memajukan teknologi di
+            Tanah Papua. Bersama-sama, kita dapat menciptakan solusi teknologi
+            yang berdampak positif dan berkelanjutan.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+            <Button size="lg" variant="default" className="h-12">
+              <Link href="/kontribusi">Mulai Berkontribusi</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="h-12">
+              <Link
+                href="https://github.com/papua-opensource"
+                target="_blank"
+                class="flex items-center gap-2"
+              >
+                <span>Lihat Proyek Kami</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
