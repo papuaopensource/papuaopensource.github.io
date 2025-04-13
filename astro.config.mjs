@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://papua-opensource.github.io",
+  site: "https://papuaopensource.github.io",
   trailingSlash: "always",
   vite: {
     plugins: [tailwindcss()]
