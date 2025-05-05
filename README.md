@@ -1,6 +1,24 @@
-# Papua Open Source Website
+<p align="center">
+  <picture>
+    <img src="./src/assets/images/logo-papua-opensource.png" alt="Better Auth Logo" width="20%">
+  </picture>
+  <h2 align="center">
+    Papua Open Source
+  </h2>
 
-Website resmi komunitas Papua Open Source, dibangun dengan [Astro](https://astro.build) dan [Tailwind CSS](https://tailwindcss.com).
+  <p align="center">
+    Papua Open Source memfasilitasi kontribusi bersama memajukan perkembangan teknologi di Tanah Papua melalui kolaborasi berbasis Open Source.
+    <br />
+    <br />
+    <a href="https://discord.gg/kuW9EajFrw">Discord</a>
+    ·
+    <a href="https://papuaopensource.github.io">Website</a>
+    ·
+    <a href="https://instagram.com/papuaopensource">Instagram</a>
+    ·
+    <a href="https://x.com/papuaopensource">X</a>
+  </p>
+</p>
 
 ## 🚀 Tentang Proyek
 
