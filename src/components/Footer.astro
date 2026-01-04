@@ -5,62 +5,62 @@ import { Github, Instagram, Twitter, Heart } from "lucide-react";
 ---
 
 <footer class="border-t px-4 py-6 md:px-8 md:py-8">
-  <div
-    class="max-w-screen-xl flex flex-col mx-auto gap-4 md:flex-row md:items-center"
-  >
-    <!-- Left side on desktop (Sponsor and Copyright) -->
     <div
-      class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6 md:mr-auto"
+        class="max-w-screen-xl flex flex-col mx-auto gap-4 md:flex-row md:items-center"
     >
-      <!-- Sponsor Button - First on mobile, Left-most on desktop -->
-      <a
-        href="https://github.com/sponsors/papuaopensource"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-3 py-1.5 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-md font-medium text-sm transition-colors duration-200 w-fit order-first md:order-none"
-      >
-        <Heart className="h-4 w-4 text-[#ea4aaa]" />
-        <span>Sponsor</span>
-      </a>
+        <!-- Left side on desktop (Sponsor and Copyright) -->
+        <div
+            class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6 md:mr-auto"
+        >
+            <!-- Sponsor Button - First on mobile, Left-most on desktop -->
+            <a
+                href="https://github.com/sponsors/papuaopensource"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-3 py-1.5 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-md font-medium text-sm transition-colors duration-200 w-fit order-first md:order-none"
+            >
+                <Heart className="h-4 w-4 text-[#ea4aaa]" />
+                <span>Sponsor</span>
+            </a>
 
-      <!-- Copyright - Second on mobile, Second on desktop -->
-      <div class="flex items-center gap-2 text-sm order-2 md:order-none">
-        <span>© 2025 Papua Open Source.</span>
-      </div>
-    </div>
+            <!-- Copyright - Second on mobile, Second on desktop -->
+            <div class="flex items-center gap-2 text-sm order-2 md:order-none">
+                <span>© 2026 Papua Open Source.</span>
+            </div>
+        </div>
 
-    <!-- Social Media Icons - Right side on desktop, Last on mobile -->
-    <div class="flex gap-8 order-3 md:order-none">
-      <Button variant="ghost" size="icon" asChild>
-        <Link
-          href="https://github.com/papuaopensource"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github className="h-4 w-4" />
-          <span class="sr-only">GitHub</span>
-        </Link>
-      </Button>
-      <Button variant="ghost" size="icon" asChild>
-        <Link
-          href="https://instagram.com/papuaopensource"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Instagram className="h-4 w-4" />
-          <span class="sr-only">Instagram</span>
-        </Link>
-      </Button>
-      <Button variant="ghost" size="icon" asChild>
-        <Link
-          href="https://x.com/papuaopensource"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Twitter className="h-4 w-4" />
-          <span class="sr-only">Twitter/X</span>
-        </Link>
-      </Button>
+        <!-- Social Media Icons - Right side on desktop, Last on mobile -->
+        <div class="flex gap-8 order-3 md:order-none">
+            <Button variant="ghost" size="icon" asChild>
+                <Link
+                    href="https://github.com/papuaopensource"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Github className="h-4 w-4" />
+                    <span class="sr-only">GitHub</span>
+                </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+                <Link
+                    href="https://instagram.com/papuaopensource"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Instagram className="h-4 w-4" />
+                    <span class="sr-only">Instagram</span>
+                </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+                <Link
+                    href="https://x.com/papuaopensource"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Twitter className="h-4 w-4" />
+                    <span class="sr-only">Twitter/X</span>
+                </Link>
+            </Button>
+        </div>
     </div>
-  </div>
 </footer>
