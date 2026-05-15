@@ -7,157 +7,142 @@ import Link from "@/components/Link.astro";
 import TabsWrapper from "@/components/TabsWrapper";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-
 import { Code, RefreshCw, Share2 } from "lucide-react";
 ---
 
 <Layout
   title="Cara Berkontribusi"
-  description="Tidak perlu menjadi seorang ahli untuk mulai berkontribusi. Kami menyambut kontributor dari semua tingkat keahlian, dari pemula hingga profesional."
+  description="Berkontribusi bukan hanya soal menulis kode. Ada banyak cara untuk membantu — dan semuanya berharga."
 >
-  <div class="min-h-screen bg-white">
-    {/* Hero Section */}
-    <section class="bg-slate-50 px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="mx-auto max-w-3xl space-y-4 text-center">
-          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">
-            Cara Berkontribusi
+  <div class="min-h-screen">
+
+    {/* Hero */}
+    <section class="bg-neutral-900 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="max-w-2xl space-y-4">
+          <p class="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Kontribusi</p>
+          <h1 class="text-4xl font-bold sm:text-5xl">
+            Semua kontribusi<br />itu berarti.
           </h1>
-          <p class="text-gray-500 md:text-xl/relaxed">
-            Bergabunglah dalam pengembangan teknologi open source untuk Tanah
-            Papua
+          <p class="text-muted-foreground text-lg leading-relaxed">
+            Tidak perlu jadi developer senior untuk mulai. Kamu bisa
+            berkontribusi lewat kode, desain, tulisan, atau sekadar melaporkan
+            bug yang kamu temukan.
           </p>
         </div>
       </div>
     </section>
 
-    {/* Principles Section */}
-    <section class="px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto space-y-12">
-        <div class="space-y-4 text-center">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Prinsip Kami
-          </h2>
-          <p class="mx-auto max-w-[700px] text-gray-500 md:text-lg/relaxed">
-            Tiga prinsip utama yang menjadi landasan komunitas Papua Open Source
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="bg-white shadow-none">
-            <CardHeader className="pb-2">
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
-              >
-                <Share2 className="h-6 w-6" />
+    <div class="border-t border-border"></div>
+
+    {/* Prinsip */}
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="space-y-12">
+          <div class="space-y-3">
+            <h2 class="text-3xl font-semibold">Cara kerja kami</h2>
+            <p class="text-muted-foreground text-base">
+              Tiga prinsip yang menjadi fondasi komunitas Papua Open Source.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="space-y-3">
+              <div class="flex items-center justify-center w-9 h-9 rounded-md bg-secondary text-foreground">
+                <Share2 className="h-4 w-4" />
               </div>
-              <CardTitle>Share</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p class="text-gray-500">
-                Mendistribusikan kode sumber ke publik, membuka akses
-                pengetahuan untuk semua.
+              <h3 class="font-semibold text-base">Share</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">
+                Semua kode dibuka ke publik. Siapa pun bisa melihat, belajar,
+                dan memahami cara kerja setiap proyek tanpa penghalang.
               </p>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-none">
-            <CardHeader className="pb-2">
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
-              >
-                <Code className="h-6 w-6" />
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center justify-center w-9 h-9 rounded-md bg-secondary text-foreground">
+                <Code className="h-4 w-4" />
               </div>
-              <CardTitle>Improve</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p class="text-gray-500">
-                Modifikasi atau perbaikan kode untuk kualitas lebih baik, terus
-                mengembangkan solusi.
+              <h3 class="font-semibold text-base">Improve</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">
+                Temukan yang kurang, perbaiki, usulkan perubahan. Tidak ada
+                kode yang sempurna — selalu ada ruang untuk lebih baik.
               </p>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-none">
-            <CardHeader className="pb-2">
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4"
-              >
-                <RefreshCw className="h-6 w-6" />
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center justify-center w-9 h-9 rounded-md bg-secondary text-foreground">
+                <RefreshCw className="h-4 w-4" />
               </div>
-              <CardTitle>Repeat</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p class="text-gray-500">
-                Teruskan siklus berbagi dan perbaikan untuk perkembangan
-                berkelanjutan.
+              <h3 class="font-semibold text-base">Repeat</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">
+                Siklus ini terus berjalan. Setiap kontribusi membuka pintu bagi
+                kontribusi berikutnya dari orang lain.
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    {/* How to Contribute Section */}
-    <section class="bg-slate-50 px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="mx-auto max-w-3xl space-y-4 text-center">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Cara Berkontribusi
-          </h2>
-          <p class="text-gray-500 md:text-lg/relaxed">
-            Ada banyak cara untuk berkontribusi pada proyek-proyek Papua Open
-            Source
+    <div class="border-t border-border"></div>
+
+    {/* Cara Berkontribusi — Tabs */}
+    <section class="bg-neutral-900 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="space-y-3 mb-12">
+          <h2 class="text-3xl font-semibold">Dari mana harus mulai?</h2>
+          <p class="text-muted-foreground text-base">
+            Pilih jalur yang paling sesuai dengan kemampuan dan minatmu.
           </p>
         </div>
-
-        <div class="mt-12">
-          <TabsWrapper client:load />
-        </div>
+        <TabsWrapper client:load />
       </div>
     </section>
 
-    {/* Getting Started Section */}
-    <section class="px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div
-          class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center"
-        >
+    <div class="border-t border-border"></div>
+
+    {/* Getting Started */}
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-start">
           <div class="space-y-6">
-            <h2 class="text-3xl font-bold tracking-tighter">
-              Mulai Berkontribusi
-            </h2>
-            <p class="text-gray-500 md:text-lg/relaxed">
-              Tidak perlu menjadi seorang ahli untuk mulai berkontribusi. Kami
-              menyambut kontributor dari semua tingkat keahlian, dari pemula
-              hingga profesional.
+            <h2 class="text-3xl font-semibold">Kontribusi pertamamu</h2>
+            <p class="text-muted-foreground text-base leading-relaxed">
+              Kami sudah menandai beberapa issue di GitHub dengan label
+              <strong class="text-foreground font-medium">"good first issue"</strong> —
+              titik masuk yang ideal untuk yang baru pertama kali berkontribusi
+              ke proyek open source.
             </p>
-            <p class="text-gray-500 md:text-lg/relaxed">
-              Kami telah menandai beberapa issue di GitHub dengan label "good
-              first issue" yang cocok untuk kontributor pertama kali. Anda juga
-              dapat bergabung dengan diskusi di forum kami untuk mendapatkan
-              bantuan dan bimbingan.
+            <p class="text-muted-foreground text-base leading-relaxed">
+              Kalau masih bingung, kamu juga bisa langsung tanya di Discord
+              kami. Ada anggota komunitas yang siap membantu.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button>
-                <Link href="https://github.com/papuaopensource"
-                  >Lihat Issue di GitHub</Link
-                >
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <Button className="font-semibold text-sm">
+                <Link href="https://github.com/papuaopensource" target="_blank">
+                  Lihat issue di GitHub
+                </Link>
               </Button>
-              <Button variant="outline">
-                <Link href="/kontak/">Hubungi Kami</Link>
+              <Button variant="outline" className="text-sm">
+                <Link
+                  href="https://discord.gg/kuW9EajFrw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bergabung ke Discord
+                </Link>
               </Button>
             </div>
           </div>
           <div>
             <Image
               src={HeroImage}
-              alt="Contribution - Open Source Illustration"
+              alt="Ilustrasi Kontribusi"
               width={600}
               height={400}
-              class="rounded-lg object-cover"
+              class="rounded-xl object-cover opacity-90"
             />
           </div>
         </div>
       </div>
     </section>
+
   </div>
 </Layout>
