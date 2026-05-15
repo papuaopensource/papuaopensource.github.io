@@ -32,11 +32,11 @@ const ContributionTabs = () => {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-gray-500">
+            <p className="text-muted-foreground">
               Berikut adalah langkah-langkah untuk berkontribusi kode pada
               proyek kami:
             </p>
-            <ol className="list-decimal pl-5 space-y-2 text-gray-500">
+            <ol className="list-decimal pl-5 space-y-2 text-muted-foreground">
               <li>Fork repositori proyek dari GitHub kami</li>
               <li>Clone repositori ke komputer lokal Anda</li>
               <li>
@@ -73,11 +73,11 @@ const ContributionTabs = () => {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-gray-500">
+            <p className="text-muted-foreground">
               Dokumentasi yang baik sangat penting untuk proyek open
               source. Anda dapat berkontribusi dengan:
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-gray-500">
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
               <li>Memperbaiki kesalahan penulisan atau tata bahasa</li>
               <li>Menambahkan contoh penggunaan</li>
               <li>Membuat tutorial atau panduan penggunaan</li>
@@ -110,11 +110,11 @@ const ContributionTabs = () => {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-gray-500">
+            <p className="text-muted-foreground">
               Anda juga dapat berkontribusi dengan membantu membangun
               komunitas:
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-gray-500">
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
               <li>Menjawab pertanyaan di forum diskusi</li>
               <li>Melaporkan bug atau masalah yang Anda temukan</li>
               <li>Mengusulkan fitur atau perbaikan baru</li>
