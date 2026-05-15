@@ -10,106 +10,113 @@ import { Button } from "@/components/ui/button";
 
 <Layout
   title="Tentang"
-  description="Papua Open Source adalah komunitas teknologi yang berfokus pada pengembangan dan kolaborasi berbasis open source di Tanah Papua."
+  description="Papua Open Source adalah komunitas yang percaya bahwa perangkat lunak seharusnya terbuka — untuk dipelajari, dimodifikasi, dan dikembangkan bersama."
 >
-  <div class="min-h-screen bg-white">
-    {/* Hero Section */}
-    <section class="bg-slate-50 px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="mx-auto max-w-3xl space-y-4 text-center">
-          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">
-            Tentang Papua Open Source
+  <div class="min-h-screen">
+
+    {/* Hero */}
+    <section class="bg-neutral-900 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="max-w-2xl space-y-4">
+          <p class="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Tentang Kami</p>
+          <h1 class="text-4xl font-bold sm:text-5xl">
+            Komunitas nyata,<br />untuk Papua nyata.
           </h1>
-          <p class="text-gray-500 md:text-xl/relaxed">
-            Mengenal lebih dekat komunitas teknologi open source di Tanah Papua
+          <p class="text-muted-foreground text-lg leading-relaxed">
+            Kami percaya perangkat lunak seharusnya terbuka — bukan milik satu
+            orang atau satu perusahaan.
           </p>
         </div>
       </div>
     </section>
 
-    {/* About Section */}
-    <section class="px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="space-y-8">
-            <h2
-              class="text-3xl font-bold tracking-tighter lg:text-left text-center"
-            >
-              Siapa Kami
-            </h2>
-            <p class="text-gray-500 md:text-lg/relaxed">
-              Papua Open Source adalah komunitas teknologi yang berfokus pada
-              pengembangan dan kolaborasi berbasis open source di Tanah Papua.
-              Kami terdiri dari para pengembang, desainer, dan teknologi
-              enthusiast yang memiliki visi untuk memajukan ekosistem teknologi
-              di Papua melalui pendekatan open source.
+    <div class="border-t border-border"></div>
+
+    {/* Siapa Kami */}
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <div class="space-y-6">
+            <h2 class="text-3xl font-semibold">Siapa kami</h2>
+            <p class="text-muted-foreground text-base leading-relaxed">
+              Papua Open Source adalah komunitas teknologi yang berbasis di
+              Papua. Kami terdiri dari pengembang, desainer, dan siapa pun yang
+              peduli pada kemajuan teknologi di tanah ini.
             </p>
-            <p class="text-gray-500 md:text-lg/relaxed">
-              Didirikan pada tahun 2024, komunitas kami telah berkembang menjadi
-              wadah kolaborasi bagi para pengembang yang ingin berkontribusi
-              pada kemajuan teknologi di Papua.
+            <p class="text-muted-foreground text-base leading-relaxed">
+              Didirikan tahun 2024, kami tumbuh dari keyakinan sederhana: bahwa
+              teknologi yang dibuat oleh orang Papua, untuk Papua, akan lebih
+              tepat sasaran dan lebih bertahan lama dibanding solusi impor yang
+              tidak mengenal konteks lokalnya.
+            </p>
+            <p class="text-muted-foreground text-base leading-relaxed">
+              Kami bukan perusahaan. Kami komunitas.
             </p>
           </div>
           <div>
             <Image
               src={HeroImage}
-              alt="About - Open Source Illustration"
+              alt="Ilustrasi Open Source"
               width={600}
               height={400}
-              class="rounded-lg object-cover mx-auto"
+              class="rounded-xl object-cover w-full opacity-90"
             />
           </div>
         </div>
       </div>
     </section>
 
-    {/* Goals Section */}
-    <section class="bg-slate-50 px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="mx-auto max-w-3xl space-y-8">
-          <h2 class="text-3xl font-bold tracking-tighter text-center">
-            Tujuan Kami
-          </h2>
-          <p class="text-gray-500 md:text-lg/relaxed">
-            Tujuan utama Papua Open Source adalah membangun ekosistem
-            pengembangan software berbasis open source di Papua. Kami berusaha
-            meningkatkan literasi digital dan kemampuan pengembangan software
-            masyarakat Papua melalui proyek-proyek kolaboratif dan berbagi
-            pengetahuan.
+    <div class="border-t border-border"></div>
+
+    {/* Mengapa Open Source */}
+    <section class="bg-neutral-900 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="max-w-2xl space-y-6">
+          <h2 class="text-3xl font-semibold">Mengapa open source?</h2>
+          <p class="text-muted-foreground text-base leading-relaxed">
+            Perangkat lunak tertutup memang bisa berguna, tapi ia membuat kita
+            bergantung. Ketika pengembangnya pergi, produknya hilang. Ketika
+            lisensinya berakhir, aksesnya tertutup.
           </p>
-          <p class="text-gray-500 md:text-lg/relaxed">
-            Kami fokus pada pengembangan solusi teknologi yang relevan dengan
-            kebutuhan lokal, seperti pelestarian bahasa daerah, dokumentasi
-            budaya, dan aplikasi yang membantu menyelesaikan masalah spesifik di
-            Papua. Dengan pendekatan open source, kami memastikan bahwa solusi
-            yang kami kembangkan dapat diakses, dimodifikasi, dan dikembangkan
-            lebih lanjut oleh siapa saja.
+          <p class="text-muted-foreground text-base leading-relaxed">
+            Open source berbeda. Kodenya ada, bisa dipelajari, bisa
+            dimodifikasi, bisa diteruskan oleh generasi berikutnya. Itulah
+            yang kami inginkan untuk Papua — teknologi yang tidak akan
+            tiba-tiba menghilang karena satu pihak berhenti mendukungnya.
+          </p>
+          <p class="text-muted-foreground text-base leading-relaxed">
+            Selain itu, open source adalah cara terbaik untuk belajar. Kamu
+            bisa melihat langsung bagaimana pengembang lain menulis kode,
+            memecahkan masalah, dan merancang solusi.
           </p>
         </div>
       </div>
     </section>
 
-    {/* CTA Section */}
-    <section class="px-4 py-12 md:px-8 md:py-24">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="mx-auto max-w-3xl space-y-6 text-center">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Bergabung dengan Komunitas Kami
+    <div class="border-t border-border"></div>
+
+    {/* CTA */}
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 md:px-8">
+        <div class="max-w-2xl space-y-6">
+          <h2 class="text-3xl font-semibold">
+            Jadilah bagian dari komunitas ini.
           </h2>
-          <p class="text-gray-500 md:text-lg/relaxed">
-            Jadilah bagian dari gerakan open source untuk memajukan teknologi di
-            Tanah Papua
+          <p class="text-muted-foreground text-base leading-relaxed">
+            Tidak perlu pengalaman bertahun-tahun. Cukup rasa ingin tahu dan
+            kemauan untuk berkontribusi, sekecil apa pun.
           </p>
-          <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-            <Button size="lg" variant="default" className="h-12">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <Button size="lg" variant="default" className="h-11 px-6 font-semibold text-sm">
               <Link href="/kontribusi/">Mulai Berkontribusi</Link>
             </Button>
-            <Button size="lg" variant="outline" className="h-12">
+            <Button size="lg" variant="outline" className="h-11 px-6 text-sm">
               <Link href="/kontak/">Hubungi Kami</Link>
             </Button>
           </div>
         </div>
       </div>
     </section>
+
   </div>
 </Layout>
